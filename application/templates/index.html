@@ -1,0 +1,37 @@
+{% extends "layout.html" %} {% block content %}
+<div class="row">
+  <div class="col-md-12 text-center">
+    {% if session['username'] %}
+    <h3>Let's get started.</h3>
+    {% else %}
+    <p>Already registered? <a href="{{url_for('login') }}">Login</a></p>
+    {% endif %}
+
+    <div style="text-align: left;">
+      <div class="container">
+        <div class="jumbotron my-5">
+          <h2 class="sisplay-4">Welcome to Universal Tech Academy.</h2>
+          <p class="lead d-lg-block">
+            Attend in-person at our Academy which includes the following
+            amenities:
+          </p>
+          <ol style="list-style-type: circle;">
+            <li>Large course room space</li>
+            <br />
+            <li>Student lounge</li>
+            <br />
+            <li>Free tech talks every Friday in our event space</li></br>
+
+            <li>Direct, in-person contact with Tech Academy employees</li>
+          </ol>
+          <hr class="my-4" />
+          <a class="btn btn-primary btn-lg" href="{{url_for('courses') }}" role="buton"
+            >Learn more</a
+          >
+        </div>
+        <!-- jumbotron -->
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+</div>
