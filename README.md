@@ -6,6 +6,6 @@
 - There is ability to use the courses via API
 - The sysyem is mobile responsive
 
-## This project is built with python flask and have access to mangodb as a database.
+## This project is built with python flask and have access to mongodb as a database.
 
 in order to run the project run 'FLASK_APP=main.py'
